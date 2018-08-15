@@ -1,0 +1,2 @@
+model_checkpoint_path: "traffic_net_rgb_mov"
+all_model_checkpoint_paths: "traffic_net_rgb_mov"
