@@ -70,12 +70,12 @@ Before I arrived at my final network architecture, I played around with a lot of
   * Epochs: 35
   * Dropout Keep Rate: 0.65
 
-I was able to train the network on an Nvidia Quadro M500, so the training was relatively fast.  After trying quite a few different network architectures I began to notice a few things that stood out.  I notices that 3x3 convolutions seems to work slightly better than 5x5 convolutions.  I also started out using network with far more filters than I needed.  Once I hammered out the flaws, I realized that this problem did not requite a massive network.
+I was able to train the network on an Nvidia Quadro M500, so the training was relatively fast.  After trying quite a few different network architectures I began to notice a few things that stood out.  I noticed that 3x3 convolutions seem to work slightly better than 5x5 convolutions.  I also started out using a network with far more filters than I needed.  Once I hammered out the flaws, I realized that this problem did not require a massive network.
 
 After training for 35 epochs on the augmented training data. I ended up with:
-Training Accuracy: 1.00
-Validation Accuracy: 0.993
-Test Accuracy: 0.939
-5 New Image Accuracy: 1.00
+* Training Accuracy: 1.00
+* Validation Accuracy: 0.993
+* Test Accuracy: 0.939
+* 5 New Image Accuracy: 1.00
 
 With the 5 new images that I found online, I used GIMP to scale the images to 32x32 and ran them through the network.  The network was 100% accurate on these five images and was extremely certain of it’s predictions. 4 of the 5 images were 100.00000% (up to 5 decimal places) and the fifth image was 99.99986%.  This tells me that the network is not only accurate, but confident in it’s predictions.
